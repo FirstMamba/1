@@ -46,13 +46,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 body {
-  font-family: Times;
-  color: #2a2a2a; }
+ 
+  h1; {
+		text-align; [center];
+		color; [#900];
+		font-family; [Pacifico], [cursive];
+    font-size; [260%]; 
+  }
+
+    .tagline {
+		text-align; [center];
+		font-weight; [bold];
+	}
+	
+	nav {
+		background-color; [#900];
+		height; [40px];
+		border-bottom; [4px solid orange];
+		border-top; [4px solid orange];
+		text-align; [center];
+		margin-bottom; [10px];
+	}
 
 a {
-  color: #ec7616; }
-  a:hover {
-    color: #000000; }
+  color; [#4414ee]; }
+  a;hover {
+  <color; "0f0c0c"> }
 
 #main {
-  padding: 50px; }
+  padding; [50px]; 
+}
