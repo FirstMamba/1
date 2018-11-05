@@ -1,6 +1,111 @@
 <!DOCTYPE html>
 <html>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .navbar {
+        border-style: solid;
+        border-width: 7px;
+        border-color: darkblue;
+        overflow: hidden;
+        background-color: darkgrey;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: rgb(0, 0, 0);
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: lightskyblue;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: darkgrey;
+        border-style: solid;
+        border-width: 7px;
+        border-color: black;
+        min-width: 158px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: lightskyblue;
+
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <a href="http://people.uncw.edu/tompkinsj/112/JavaScript/GettingStartedwithP5js.pdf">P5 webpage</a>
+        <a href="https://github.com">Github homepage</a></li>
+        <a href="https://github.com/login">Github login page</a>
+        <a href="https://codehs.com/go/672D5">Python login page</a>
+        <a href="https://repl.it/login?goto=%2Frepls">Repl.it homepage</a>
+        <a href="https://stackoverflow.com/">stackoverflow.com</a>
+        <a href="https://flutter.io/?gclid=EAIaIQobChMI-MuF-cyd3gIVxEwNCh1CpQOxEAAYASAAEgLpH_D_BwE&dclid=CM7BkfzMnd4CFZEONwodza0HbA">Flutter.io
+            webpage</a>
+        <a href="https://www.w3schools.com/">w3schools homepage</a>
+        <a href="http://appinventor.mit.edu/explore/#">App inventor website</a>
+        <a href="https://code.visualstudio.com/docs/languages/html">Visual Studio Code help</a>
+        <a href="https://unity3d.com/learn/tutorials/topics/user-interface-ui/building-framework">Unity gamebuilding
+            building-framework</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">W 3 SCHOOLS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://www.w3schools.com/css/css3_buttons.asp">CSS button</button></a>
+                <a href="https://www.w3schools.com/css/css3_fonts.asp">CSS fonts</a>
+                <a href="https://www.w3schools.com/css/css_grid.asp">CSS grids</a>
+                <a href="https://www.w3schools.com/css/css_dropdowns.asp">CSS dropdown menu</a>
+            </div>
+        </div>
+    </div>
+
 <head>
     <title>Digital Photography ART 265</title>
 
@@ -10,30 +115,29 @@
 
 <body style="background-color:rgb(35, 147, 199); text-align: center">
     <div id="main" role="main">
-        <h1 style="color:rgb(0, 0, 0);">Digital Photography</h1>
+        <h1 style="font-size:22pt; color:rgb(0, 0, 0);">Digital Photography ART 265</h1>
+        <div class="container">
         <img style="border-style: solid;border-width: 2.5px;border-color:rgb(122, 122, 122);" src="canon_1263c005_eos_80d_dslr_camera_1225876.jpeg"
         alt="DSLR 500" height="568" width="600">
-        <p style="color:black; font-weight: bold;">This is my portfolio</p>
+        <div class="top left">A DSLR 5100</div>
+        </div>
+        </div>
+        <p style="font-size:22pt;color:black; font-weight: bold;">This is my portfolio</p>
 
 
         
-        <ul style="background-color: darkgoldenrod">
+        <ul style="float: center; width: 92%; padding: 50px; height: 200px; border-style: solid;border-width: 7px; border-color:darkgoldenrod; background-color:black;">
             
-            
+            <li><a href="../Questions for HW/images/index.html">images</a></li>
+            <li><a href="../../Sample Portfolio Files/index.html">Top Level</a></li>
+            <li><a href="../Questions for HW/index.html">Questions for HW</a></li>
             <li><a href="https://www.w3schools.com/">w3schools homepage</a></li>
             <li><a href="Week 1/index.html">Images folder Week 1</a></li>
             <li><a href="Week 2/index.html">Images folder Week 2</a></li>
-
+            <li><a href="Week 3/index.html">Images folder Week 3</a></li>
         </ul>
 
-        <ul style="background-color: darkgoldenrod">
-            <li><a href="../../Sample Portfolio Files/index.html">Top Level</a></li>
-            <li><a href="../Questions for HW/index.html">Questions for HW</a></li>
-            <li><a href="../Questions for HW/images/index.html">images</a></li>
 
-        
-        
-        </ul>
         
 
 
