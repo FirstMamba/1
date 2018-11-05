@@ -1,1 +1,1 @@
-FirstMamba.gitgub.io
+FirstMamba.github.io
