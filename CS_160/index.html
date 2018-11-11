@@ -248,9 +248,12 @@ Put O in i, complement i, add 1, and printBits(i)
 
 what does i << 1 do? what about i >> 1?
 
+    this causes -1073741824  11000000000000000000000000000000
+    these numbers to show up for the first part. If 1 in 
+    i >> 1 isnt 1 the number is different and switches places 
+    with the line beneath it. 
 
-
-what changesif i is unsigned rather than int?
+what changes if i is unsigned rather than int?
 
 
 
