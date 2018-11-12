@@ -123,20 +123,6 @@
         </div>
         <p style="font-size:22pt;color:rgb(43, 189, 30); font-weight: bold;">This is my portfolio</p>
 
-
-        <ul style="float: center; width: 92%; padding: 50px; height: 100px; border-style: solid;border-width: 7px; border-top-color: darkgreen;
-        border-left-color: darkgreen; border-right-color: rgb(43, 189, 30); border-bottom-color:rgb(43, 189, 30); background-color:white;">
-
-            <li><a href="../Questions for HW/images/index.html">images</a></li>
-            <li><a href="../../CS_160/index.html">Top Level</a></li>
-            <li><a href="../Questions for HW/index.html">Questions for HW</a></li>
-            <li><a href="../Digital_Photography 265/Week 1/index.html">Images folder Week 1</a></li>
-            <li><a href="../Digital_Photography 265/Week 2/index.html">Images folder Week 2</a></li>
-            <li><a href="../Digital_Photography 265/week 3/index.html">Images folder Week 3</a></li>
-        </ul>
-
-        </div>
-    
         <style>
             * {
                 box-sizing: border-box;
@@ -212,58 +198,73 @@
                     <img src="full_adder.JPG" style="width:75%">
                     <img src="full_adder_2.JPG" style="width:75%">
                     <img src="full_adder_3.JPG" style="width:75%">
-
-                <div class="column">
-                    <img src="half_adder.JPG" style="width:75%">
-                    <img src="half_adder_1.JPG" style="width:75%">
-                    <img src="half_adder_2.JPG" style="width:75%">
-
+        
+                    <div class="column">
+                        <img src="half_adder.JPG" style="width:75%">
+                        <img src="half_adder_1.JPG" style="width:75%">
+                        <img src="half_adder_2.JPG" style="width:75%">
+        
+                    </div>
+        
                 </div>
         
-            </div>
+                <script>
+                    // Get the elements with class="column"
+                    var elements = document.getElementsByClassName("column");
+
+                    // Declare a loop variable
+                    var i;
+
+                    // Full-width images
+                    function one() {
+                        for (i = 0; i < elements.length; i++) {
+                            elements[i].style.msFlex = "100%";  // IE10
+                            elements[i].style.flex = "100%";
+                        }
+                    }
+
+                    // Two images side by side
+                    function two() {
+                        for (i = 0; i < elements.length; i++) {
+                            elements[i].style.msFlex = "50%";  // IE10
+                            elements[i].style.flex = "50%";
+                        }
+                    }
+
+                    // Four images side by side
+                    function four() {
+                        for (i = 0; i < elements.length; i++) {
+                            elements[i].style.msFlex = "25%";  // IE10
+                            elements[i].style.flex = "25%";
+                        }
+                    }
+
+                    // Add active class to the current button (highlight it)
+                    var header = document.getElementById("myHeader");
+                    var btns = header.getElementsByClassName("btn");
+                    for (var i = 0; i < btns.length; i++) {
+                        btns[i].addEventListener("click", function () {
+                            var current = document.getElementsByClassName("active");
+                            current[0].className = current[0].className.replace(" active", "");
+                            this.className += " active";
+                        });
+                    }
+                </script>
+
+        <ul style="float: center; width: 92%; padding: 50px; height: 100px; border-style: solid;border-width: 7px; border-top-color: darkgreen;
+        border-left-color: darkgreen; border-right-color: rgb(43, 189, 30); border-bottom-color:rgb(43, 189, 30); background-color:white;">
+
+            <li><a href="../Questions for HW/images/index.html">images</a></li>
+            <li><a href="../../CS_160/index.html">Top Level</a></li>
+            <li><a href="../Questions for HW/index.html">Questions for HW</a></li>
+            <li><a href="../Digital_Photography 265/Week 1/index.html">Images folder Week 1</a></li>
+            <li><a href="../Digital_Photography 265/Week 2/index.html">Images folder Week 2</a></li>
+            <li><a href="../Digital_Photography 265/week 3/index.html">Images folder Week 3</a></li>
+        </ul>
+
+        </div>
+    
         
-            <script>
-                // Get the elements with class="column"
-                var elements = document.getElementsByClassName("column");
-
-                // Declare a loop variable
-                var i;
-
-                // Full-width images
-                function one() {
-                    for (i = 0; i < elements.length; i++) {
-                        elements[i].style.msFlex = "100%";  // IE10
-                        elements[i].style.flex = "100%";
-                    }
-                }
-
-                // Two images side by side
-                function two() {
-                    for (i = 0; i < elements.length; i++) {
-                        elements[i].style.msFlex = "50%";  // IE10
-                        elements[i].style.flex = "50%";
-                    }
-                }
-
-                // Four images side by side
-                function four() {
-                    for (i = 0; i < elements.length; i++) {
-                        elements[i].style.msFlex = "25%";  // IE10
-                        elements[i].style.flex = "25%";
-                    }
-                }
-
-                // Add active class to the current button (highlight it)
-                var header = document.getElementById("myHeader");
-                var btns = header.getElementsByClassName("btn");
-                for (var i = 0; i < btns.length; i++) {
-                    btns[i].addEventListener("click", function () {
-                        var current = document.getElementsByClassName("active");
-                        current[0].className = current[0].className.replace(" active", "");
-                        this.className += " active";
-                    });
-                }
-            </script>
     
     </body>
 
