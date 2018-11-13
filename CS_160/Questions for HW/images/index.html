@@ -1,5 +1,138 @@
 <!DOCTYPE html>
 <html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .navbar {
+        border-style: solid;
+        border-width: 7px;
+        border-color:darkgoldenrod;
+        overflow: hidden;
+        background-color: lightslategray;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: rgb(0, 0, 0);
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: lightslategray;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: lightslategray;
+        border-style: solid;
+        border-width: 7px;
+        border-color:darkgoldenrod;
+        min-width: 158px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: lightslategray;
+
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <a href="http://people.uncw.edu/tompkinsj/112/JavaScript/GettingStartedwithP5js.pdf">P5.js pdf</a>
+        <a href="https://github.com">Github home</a></li>
+        <a href="https://github.com/login">Github login</a>
+        <a href="https://codehs.com/go/672D5">Python login</a>
+        <a href="https://repl.it/login?goto=%2Frepls">Repl.it login</a>
+        <a href="https://repl.it/">Repl.it home</a>
+        <a href="https://stackoverflow.com/">stackoverflow.com</a>
+        <a href="https://flutter.io/?gclid=EAIaIQobChMI-MuF-cyd3gIVxEwNCh1CpQOxEAAYASAAEgLpH_D_BwE&dclid=CM7BkfzMnd4CFZEONwodza0HbA">Flutter.io
+            webpage</a>
+        <a href="https://www.w3schools.com/">w3schools homepage</a>
+        <a href="http://appinventor.mit.edu/explore/#">App inventor website</a>
+        <a href="https://code.visualstudio.com/docs/languages/html">Visual Studio Code help</a>
+        <a href="https://unity3d.com/learn/tutorials/topics/user-interface-ui/building-framework">Unity gamebuilding
+            building-framework</a>
+
+
+
+        <div class="dropdown">
+            <button class="dropbtn">Nand 2 tetris links</button>
+            <div class="dropdown-content">
+                <a href="https://www.nand2tetris.org/course">nand2tetris</a>
+                <a href="https://docs.wixstatic.com/ugd/44046b_2cc5aac034ae49f4bf1650a3d31df32c.pdf">Appendix A pdf</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">WK Practice links</button>
+            <div class="dropdown-content">
+                <a href="https://docs.google.com/document/d/1wxJ4K9qYcGUCYL4PW7I3raZ8PVsjAHtgjbaeNWZA-mY/edit">Weekly
+                    Practice</a>
+                <a href="https://developers.google.com/edu/python/">Google Python class</a>
+                <a href="https://docs.python.org/3/index.html">Python 3 documentation</a>
+                <a href="https://s2js.com/altair/sim.html">8800 MITS Altair</a>
+                <a href="https://www.quora.com/Is-computer-programming-all-about-coding/answer/Brian-Overland-1?srid=Bifq">Is
+                    programming all about coding</a>
+                <a href="https://docs.wixstatic.com/ugd/44046b_2cc5aac034ae49f4bf1650a3d31df32c.pdf">Appendix A pdf</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">W 3 SCHOOLS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://www.w3schools.com/css/css3_buttons.asp">CSS button</button></a>
+                <a href="https://www.w3schools.com/css/css3_fonts.asp">CSS fonts</a>
+                <a href="https://www.w3schools.com/css/css_grid.asp">CSS grids</a>
+                <a href="https://www.w3schools.com/css/css_dropdowns.asp">CSS dropdown menu</a>
+                <a href="https://www.w3schools.com/howto/howto_css_images_side_by_side.asp">CSS Image format</a>
+            </div>
+        </div>
+    </div>
+
+
 <title>Questions for HW</title>
 
 <body style="background-color: lightslategray"></body>
