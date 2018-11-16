@@ -10,8 +10,7 @@ function draw() {
     if (mouseIsPressed) {
         fill(0);
 
-
-    }
+    
     }
     else {
         fill(126, 140, 162);
