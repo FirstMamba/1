@@ -10,11 +10,17 @@ function draw() {
     if (mouseIsPressed) {
         fill(0);
 
+    if (keyIsPressed) {
+        if((key=='h'))||(key=='H') {
+            line(30, 60, 90, 60);
+        }
+
+    }
     }
     else {
         fill(126, 140, 162);
     }
     ellipse(mouseX, mouseY, 250, 250)
     rect(mouseX, mouseY, 125, 125)
-    Text("Hello", 27, 90)
+    line(90, 20, 90, 100)
 }
