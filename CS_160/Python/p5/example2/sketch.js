@@ -1,7 +1,7 @@
 function setup() {
     // put setup code here
     createCanvas(1200, 800);
-    CanvasGradient(0027, 30263, 24243);
+    CanvasGradient(, , );
 }
 
 function draw() {
