@@ -10,10 +10,6 @@ function draw() {
     if (mouseIsPressed) {
         fill(0);
 
-    if (keyIsPressed) {
-        if((key=='h'))||(key=='H') {
-            line(30, 60, 90, 60);
-        }
 
     }
     }
@@ -22,9 +18,5 @@ function draw() {
     }
     ellipse(mouseX, mouseY, 250, 250)
     rect(mouseX, mouseY, 125, 125)
-    newFunction();
-
-    function newFunction() {
-        line(90, 20, 90, 100);
-    }
+    
 }
