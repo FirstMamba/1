@@ -12,5 +12,5 @@ function draw() {
         fill(178, 34, 34);
     }
     ellipse(mouseX, mouseY, 250, 250)
-    rect(mouseX, mouseY, 50, 50)
+    rect(mouseX, mouseY, 200, 200)
 }
