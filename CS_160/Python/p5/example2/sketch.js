@@ -6,10 +6,10 @@ function setup() {
 function draw() {
     //put drawing code here
     if (mouseIsPressed) {
-        fill(220,20,60);
+        fill(0);
     }
     else {
-        fill(0);
+        fill(178, 34, 34);
     }
     ellipse(mouseX, mouseY, 250, 250)
 }
