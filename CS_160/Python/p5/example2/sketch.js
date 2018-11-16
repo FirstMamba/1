@@ -10,7 +10,7 @@ function draw() {
     if (mouseIsPressed) {
         fill(0);
     if (scroll) {
-        scale(scrollX, 60.0);
+        rotate(scale);
     }
     }
     else {
@@ -18,5 +18,6 @@ function draw() {
     }
     ellipse(mouseX, mouseY, 250, 250)
     rect(mouseX, mouseY, 125, 125)
-    scale(scrollX, scrollY, 0, 30)
+    rect(-15, -15, 30, 30);
+    angle +=0.1;
 }
