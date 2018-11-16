@@ -18,6 +18,6 @@ function draw() {
     }
     ellipse(mouseX, mouseY, 250, 250)
     rect(mouseX, mouseY, 125, 125)
-    rect(-15, -15, 30, 30);
+    rect(scrollX, screenY, 30, 30);
     angle +=0.1;
 }
