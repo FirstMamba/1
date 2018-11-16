@@ -22,5 +22,9 @@ function draw() {
     }
     ellipse(mouseX, mouseY, 250, 250)
     rect(mouseX, mouseY, 125, 125)
-    line(90, 20, 90, 100)
+    newFunction();
+
+    function newFunction() {
+        line(90, 20, 90, 100);
+    }
 }
