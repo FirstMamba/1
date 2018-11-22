@@ -1,15 +1,21 @@
 function setup() {
-	// put setup code here
-  createCanvas(800,600);
+  // put setup code here
+  createCanvas(1200, 800);
+  background(128, 0, 0);
+
 }
 
 function draw() {
-	//put drawing code here
-	if (mouseIsPressed) {
-		fill(0);
+  //put drawing code here
+  if (mouseIsPressed) {
+    fill(0);
+
+
   }
   else {
-    fill(0, 0, 255, 160);
+    fill(126, 140, 162);
   }
-  ellipse(mouseX,mouseY,80,80)
+  ellipse(mouseX, mouseY, 250, 250)
+  rect(mouseX, mouseY, 125, 125)
+
 }
